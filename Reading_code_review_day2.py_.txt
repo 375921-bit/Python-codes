@@ -1,0 +1,23 @@
+def numbers_of_doubles():
+  file = open('repeating_numbers.txt')
+  #get all numbers in file into a list
+  list_of_numbers = []
+  for line in file:
+    number = ''
+    for character in line:
+      if character != ('' or '\n'):
+        number += character
+    
+    list_of_numbers.append(number)
+
+  #nested for loops to find if numbers repeat
+  doubles = 0
+  count = 0
+  for i in list_of_numbers:
+    for j in list_of_numbers[count+1:]: #starts on next index in list
+      if int(i) == int(j):
+        doubles += 1
+    count += 1
+  print(doubles)
+
+numbers_of_doubles()
