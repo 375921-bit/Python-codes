@@ -1,0 +1,40 @@
+days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+my_courses = ["English", "Math", "CS"]
+
+for d in days_of_week:
+  print(d)
+
+  for c in my_courses:
+    print("  " + c)
+
+   # CODE TO ADD
+#   a118_grades.py
+#   This code is incomplete. 
+my_courses = ["English", "Math", "CS"] 
+
+# CODE SEGMENT TO ADD
+
+# CODE SEGMENT TO ADD
+redo = "y"
+while (redo == "y"):
+
+# CODE SEGMENT TO ADD
+    for course in my_courses:
+        print() # blank line
+        print("Enter your points for " + course)
+
+        points = int(input("Points -> "))
+  
+# CODE SEGMENT TO ADD
+        if (points >= 90):
+            print("A")
+        elif (points >= 80):
+            print("B")
+        elif (points >= 70):
+            print("C")
+        elif (points >= 60):
+            print("D")
+        else:
+            print("F")
+
+    redo = input("Do you need to re-do these grades? (y/n)")
